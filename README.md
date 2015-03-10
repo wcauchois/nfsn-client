@@ -90,7 +90,7 @@ A `LOGIN` and `API_KEY` are required. These can also be specified via the
 - **method** should be the individual API method you want to invoke (e.g. `listRRs`).
 
 Note that _site_ and _method_ correspond to a first-level object on `client` (e.g. `client.dns`)
-and the second-level method (e.g. `client.dns.listRRs)` respectively.
+and a second-level method (e.g. `client.dns.listRRs)` respectively.
 
 ### Example Command-Line Usage
 
