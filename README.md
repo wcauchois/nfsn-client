@@ -3,7 +3,7 @@ NearlyFreeSpeech.NET API Client
 
 This package implements a Node.js client for the [NearlyFreeSpeech.NET](https://www.nearlyfreespeech.net/)
 [API](https://members.nearlyfreespeech.net/wiki/API/Introduction). Additionally, a command-line program
-that uses the client is provided.
+that uses the library is provided.
 
 NSFN is a (bretty gud) web host/registrar. Their API allows you to update DNS records and access
 information about your account, among other things. Note that in order to obtain an API key, you
