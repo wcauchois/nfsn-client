@@ -61,7 +61,7 @@ if (require.main === module) {
   var args = {};
   _.each(func.argNames, function(argName) {
     if (_.isObject(argName)) {
-      // An argname can be of the form {"cli-argument", "actual-api-argument"}
+      // An argname can be of the form {"cli-argument": "actual-api-argument"}
       var key = _.first(_.keys(argName));
       if (argv[key]) {
         args[argName[key]] = argv[key];
