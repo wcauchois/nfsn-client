@@ -98,10 +98,15 @@ _.extend(NfsnClient.prototype, {
         cb(error);
       } else {
         var jsonBody;
-        try {
-          jsonBody = JSON.parse(body);
-        } catch (ex) {
-          cb(ex);
+        if (!body) {
+          // Empty response case
+          jsonBody = {};
+        } else {
+          try {
+            jsonBody = JSON.parse(body);
+          } catch (ex) {
+            cb(ex);
+          }
         }
 
         if (jsonBody) {
