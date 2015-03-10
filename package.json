@@ -1,6 +1,6 @@
 {
   "name": "nfsn-client",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Client for the NearlyFreeSpeech.NET API",
   "main": "index.js",
   "scripts": {
