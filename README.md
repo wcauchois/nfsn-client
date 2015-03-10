@@ -5,7 +5,7 @@ This package implements a Node.js client for the [NearlyFreeSpeech.NET](https://
 [API](https://members.nearlyfreespeech.net/wiki/API/Introduction). Additionally, a command-line program
 that uses the library is provided.
 
-NSFN is a (bretty gud) web host/registrar. Their API allows you to update DNS records and access
+NFSN is a (bretty gud) web host/registrar. Their API allows you to update DNS records and access
 information about your account, among other things. Note that in order to obtain an API key, you
 must currently submit a support request. See the
 [API introduction](https://members.nearlyfreespeech.net/wiki/API/Introduction) (requires login) for more information.
@@ -40,7 +40,7 @@ of which the following are supported:
 - **ntpPort**: The port for the NTP server (default: 123).
 - **ntpRetries**: The # of times to retry fetching a date from the NTP server (default: 3).
 
-NTP support is provided because the NSFN API is very time sensitive (you must embed a
+NTP support is provided because the NFSN API is very time sensitive (you must embed a
 timestamp in every request). If your system clock deviates by more than 5 seconds from
 the API servers', you request will be rendered invalid. NTP is optional, and if your
 system time is configured correctly you can omit these parameters.
