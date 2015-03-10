@@ -8,7 +8,7 @@ that uses the library is provided.
 NSFN is a (bretty gud) web host/registrar. Their API allows you to update DNS records and access
 information about your account, among other things. Note that in order to obtain an API key, you
 must currently submit a support request. See the
-[API introduction](https://members.nearlyfreespeech.net/wiki/API/Introduction) for more information.
+[API introduction](https://members.nearlyfreespeech.net/wiki/API/Introduction) (requires login) for more information.
 
 Example
 ---
