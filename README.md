@@ -10,6 +10,13 @@ information about your account, among other things. Note that in order to obtain
 must currently submit a support request. See the
 [API introduction](https://members.nearlyfreespeech.net/wiki/API/Introduction) (requires login) for more information.
 
+Install
+---
+
+    npm install nfsn-client
+
+Use `-g` if you want the CLI to be available globally.
+
 Example
 ---
 
