@@ -31,7 +31,7 @@ Details
 ---
 
 In order to access the API, you must construct an instance of `NfsnClient` (this is the
-sole export of this module). `NfsnClient` takes a single argument, a dictionary of options,
+root export of this module). `NfsnClient` takes a single argument, a dictionary of options,
 of which the following are supported:
 
 - **login** (required): Your username on NearlyFreeSpeech.NET.
@@ -79,7 +79,7 @@ CLI
 
 This package also provides an `nfsn-client` command-line tool.
 
-  usage: nfsn-client --login LOGIN --api-key API_KEY [--use-ntp|-n] [--ntp-host HOST] [--ntp-port PORT] [...] site instance method
+    usage: nfsn-client --login LOGIN --api-key API_KEY [--use-ntp|-n] [--ntp-host HOST] [--ntp-port PORT] [...] site instance method
 
 A `LOGIN` and `API_KEY` are required. These can also be specified via the
 `NFSN_LOGIN` and `NFSN_API_KEY` environment variables.
@@ -94,10 +94,10 @@ and the second-level method (e.g. `client.dns.listRRs)` respectively.
 
 ### Example Command-Line Usage
 
-  nfsn-client --login joe_user --api-key super_secret dns example.com listRRs
+    nfsn-client --login joe_user --api-key super_secret dns example.com listRRs
 
-  export NFSN_LOGIN=joe_user
-  export NFSN_API_KEY=super_secret
-  nfsn-client dns example.com listRRs
+    export NFSN_LOGIN=joe_user
+    export NFSN_API_KEY=super_secret
+    nfsn-client dns example.com listRRs
 
 
