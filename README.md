@@ -99,14 +99,21 @@ A `LOGIN` and `API_KEY` are required. These can also be specified via the
 Note that _site_ and _method_ correspond to a first-level object on `client` (e.g. `client.dns`)
 and a second-level method (e.g. `client.dns.listRRs)` respectively.
 
+You may also pass additional arguments specific to the method (e.g. `--type` for `listRRs` to
+restrict results to that record type). These arguments should correspond to the arguments
+detailed in the NFSN reference.
+
+Some methods, like `addRR`, require parameters. You'll get an error if you omit these.
+
+The output is pretty-printed JSON, unless it detects you're piping to another command.
+
 ### Example Command-Line Usage
 
-    nfsn-client --login joe_user --api-key super_secret dns example.com listRRs
+    nfsn-client --login joe_user --api-key super_secret dns example.com listRRs --type A
 
 ---
 
     export NFSN_LOGIN=joe_user
     export NFSN_API_KEY=super_secret
     nfsn-client dns example.com listRRs
-
 
