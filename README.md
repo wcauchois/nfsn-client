@@ -96,6 +96,7 @@ and the second-level method (e.g. `client.dns.listRRs)` respectively.
 
     nfsn-client --login joe_user --api-key super_secret dns example.com listRRs
 
+
     export NFSN_LOGIN=joe_user
     export NFSN_API_KEY=super_secret
     nfsn-client dns example.com listRRs
