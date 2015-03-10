@@ -15,5 +15,15 @@
   "bugs": {
     "url": "https://github.com/wcauchois/nfsn-client/issues"
   },
-  "homepage": "https://github.com/wcauchois/nfsn-client"
+  "homepage": "https://github.com/wcauchois/nfsn-client",
+  "dependencies": {
+    "async": "^0.9.0",
+    "lodash": "^3.5.0",
+    "minimist": "^1.1.0",
+    "ntp-client": "^0.5.3",
+    "request": "^2.53.0"
+  },
+  "bin": {
+    "nfsn-client": "./bin/nfsn-client.js"
+  }
 }
