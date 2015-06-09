@@ -109,13 +109,13 @@ The output is pretty-printed JSON, unless it detects you're piping to another co
 
 ### Example Command-Line Usage
 
-## Listing resource records for a domain
+#### Listing resource records for a domain
 
 Use `type` to restrict to a specific type of record.
 
     nfsn-client --login joe_user --api-key super_secret dns example.com listRRs --type A
 
-## Remove a resource record for a subdomain
+#### Remove a resource record for a subdomain
 
     nfsn-client --login joe_user --api-key super_secret dns example.com removeRR --name subdomain --type A
 
